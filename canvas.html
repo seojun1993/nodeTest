@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노드 테스트</title>
+
+    <style>
+        body{width:100%; height:100vh; display:flex; justify-content: center; align-items: center; overflow: hidden;}
+        #Box{
+            position: relative;
+            width:100%;
+            border:1px dashed red;
+            background:rgba(0, 0, 0, .1);
+        }
+
+        #canvas{position: absolute; left:0; right:0; top:0; bottom:0;}
+
+        img{width:100%; display:block; object-fit: cover;}
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="xml2json.js"></script>
+</head>
+<body>
+    <div id="Box">
+        <img src="test.png" alt="Image">
+        <canvas id="canvas" width="3840" height="2160"></canvas>
+
+        &lt;
+    </div>
+
+    <script>
+
+                
+        // kiosk_route  데이터 바인딩
+        $.ajax({
+            type: "GET",
+            url: "kiosk_route_1.3.xml",
+            dataType: "xml",
+            success: function (data) {
+                gl_load_route = $.xml2json(data);
+                let nodeInfo = gl_load_route.NODE_LIST.NODE_INFO;
+
+                const canvas = document.getElementById('canvas');
+                const filterFloor = nodeInfo.filter(e => e.floor == '1F');
+                let target;
+                let EndArr = [];
+                let minArr = [];
+                let distanceArr = [];
+                const StartPoint = [filterFloor[7].x2, filterFloor[7].y2];
+
+                // 좌표 거리 계산 함수
+                function getDistance(x1, y1, x2, y2){
+                    let x = x2 - x1;
+                    let y = y2 - y1;
+                    let distance =  Math.sqrt(x * x + y * y);
+
+                        distanceArr.push(distance);
+
+                    return distance;
+                }
+
+                for(let i = 0; i < filterFloor.length; i++){
+                    let End = [filterFloor[i].x1, filterFloor[i].y1];
+                    EndArr.push(End);
+
+                    // 각 배열 별 좌표 거리 구하고 minArr 변수에 저장
+                    minArr.push(getDistance(StartPoint[0], StartPoint[1], EndArr[i][0], EndArr[i][1]));
+                }
+
+                console.log(EndArr);
+
+                // 배열에서 가장 짧은 거리 구하기
+                let shortDistance = (Math.min.apply(null, distanceArr));
+                    target = minArr.filter(e => e == shortDistance);
+
+                    console.log(distanceArr);
+                    // 가장 짧은 거리에 해당하는 배열의 인덱스 구하기
+                    distanceArr.forEach((arr, index) => {
+                        if(arr == shortDistance){
+                            let findIdx = index;
+
+                            let ctx = canvas.getContext("2d");
+
+                            // 가까운 거리 좌표 수정
+                            ctx.moveTo(0, 0);
+                            ctx.lineTo(0, 0);
+                            ctx.lineTo(0, 0);
+                            ctx.strokeStyle = "black";
+                            ctx.stroke();
+                        }
+                    })
+            }, error: function (err) {
+                console.log(err);
+            }
+        });
+
+
+    </script>
+</body>
+</html>

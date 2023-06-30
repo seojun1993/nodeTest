@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<KIOSK>
+  <HEADER>
+    <RET_CODE>SUCC</RET_CODE>
+    <VERSION>1.3</VERSION>
+  </HEADER>
+  <STORE_LIST>
+    <STORE_INFO id='20' dp_type='Y' search_type='Y'>
+      <STORE_FLOOR pos_x='1624' pos_y='1295' b_code='B0008'>1F</STORE_FLOOR>
+      <STORE_NAME_KOR><![CDATA[스프링 팰리스]]></STORE_NAME_KOR>
+      <STORE_NAME_ENG><![CDATA[Spring Palace]]></STORE_NAME_ENG>
+      <STORE_NAME_CHN><![CDATA[Spring Palace]]></STORE_NAME_CHN>
+      <STORE_NAME_JPN><![CDATA[Spring Palace]]></STORE_NAME_JPN>
+      <FONT_SIZE>60</FONT_SIZE>
+      <FONT_COLOR>#000000</FONT_COLOR>
+      <LINE_HEIGHT>60</LINE_HEIGHT>
+      <GATE_POS_X><![CDATA[1622]]></GATE_POS_X>
+      <GATE_POS_Y><![CDATA[1371]]></GATE_POS_Y>
+    </STORE_INFO>
+    <STORE_INFO id='36' dp_type='Y' search_type='Y'>
+      <STORE_FLOOR pos_x='2104' pos_y='405' b_code='B0008'>1F</STORE_FLOOR>
+      <STORE_NAME_KOR><![CDATA[바이스트 키즈]]></STORE_NAME_KOR>
+      <STORE_NAME_ENG><![CDATA[BUYEST KIDS]]></STORE_NAME_ENG>
+      <STORE_NAME_CHN><![CDATA[BUYEST KIDS]]></STORE_NAME_CHN>
+      <STORE_NAME_JPN><![CDATA[BUYEST KIDS]]></STORE_NAME_JPN>
+      <FONT_SIZE>60</FONT_SIZE>
+      <FONT_COLOR>#000000</FONT_COLOR>
+      <LINE_HEIGHT>60</LINE_HEIGHT>
+      <GATE_POS_X><![CDATA[2109]]></GATE_POS_X>
+      <GATE_POS_Y><![CDATA[512]]></GATE_POS_Y>
+    </STORE_INFO>
+    <STORE_INFO id='26' dp_type='Y' search_type='Y'>
+      <STORE_FLOOR pos_x='2732' pos_y='1146' b_code='B0008'>2F</STORE_FLOOR>
+      <STORE_NAME_KOR><![CDATA[베이커리]]></STORE_NAME_KOR>
+      <STORE_NAME_ENG><![CDATA[Bakery]]></STORE_NAME_ENG>
+      <STORE_NAME_CHN><![CDATA[Bakery]]></STORE_NAME_CHN>
+      <STORE_NAME_JPN><![CDATA[Bakery]]></STORE_NAME_JPN>
+      <FONT_SIZE>60</FONT_SIZE>
+      <FONT_COLOR>#000000</FONT_COLOR>
+      <LINE_HEIGHT>60</LINE_HEIGHT>
+      <GATE_POS_X><![CDATA[2732]]></GATE_POS_X>
+      <GATE_POS_Y><![CDATA[1215]]></GATE_POS_Y>
+    </STORE_INFO>
+    <STORE_INFO id='24' dp_type='Y' search_type='Y'>
+      <STORE_FLOOR pos_x='2995' pos_y='912' b_code='B0008'>2F</STORE_FLOOR>
+      <STORE_NAME_KOR><![CDATA[다자이]]></STORE_NAME_KOR>
+      <STORE_NAME_ENG><![CDATA[DAZAI]]></STORE_NAME_ENG>
+      <STORE_NAME_CHN><![CDATA[DAZAI]]></STORE_NAME_CHN>
+      <STORE_NAME_JPN><![CDATA[DAZAI]]></STORE_NAME_JPN>
+      <FONT_SIZE>60</FONT_SIZE>
+      <FONT_COLOR>#000000</FONT_COLOR>
+      <LINE_HEIGHT>60</LINE_HEIGHT>
+      <GATE_POS_X><![CDATA[2866]]></GATE_POS_X>
+      <GATE_POS_Y><![CDATA[975]]></GATE_POS_Y>
+    </STORE_INFO>
+  </STORE_LIST>
+  <PUB_LIST>
+    <PUB_INFO sect='' status='ALL' area='ESC_A' floor='1F,2F,3F,4F,5F'>
+      <PUB_ID>PUB_1F_2</PUB_ID>
+      <PUB_CODE>P02</PUB_CODE>
+      <PUB_FLOOR pos_x='2504' pos_y='925' b_code='B0003' >1F</PUB_FLOOR>
+    </PUB_INFO>
+    <PUB_INFO sect='' status='ALL' area='ELE_A' floor='1F,2F,3F,4F'>
+      <PUB_ID>PUB_1F_3</PUB_ID>
+      <PUB_CODE>P01</PUB_CODE>
+      <PUB_FLOOR pos_x='3104' pos_y='1669' b_code='B0003' >1F</PUB_FLOOR>
+    </PUB_INFO>
+    <PUB_INFO sect='' status='' area='' floor='1F'>
+      <PUB_ID>PUB_1F_4</PUB_ID>
+      <PUB_CODE>P03</PUB_CODE>
+      <PUB_FLOOR pos_x='1568' pos_y='1634' b_code='B0003' >1F</PUB_FLOOR>
+    </PUB_INFO>
+    <PUB_INFO sect='' status='ALL' area='ELE_A' floor='1F,2F'>
+      <PUB_ID>PUB_1F_2</PUB_ID>
+      <PUB_CODE>P01</PUB_CODE>
+      <PUB_FLOOR pos_x='1587' pos_y='600' b_code='B0008' >1F</PUB_FLOOR>
+    </PUB_INFO>
+    <PUB_INFO sect='' status='ALL' area='ESC_A' floor='1F,2F'>
+      <PUB_ID>PUB_1F_3</PUB_ID>
+      <PUB_CODE>P02</PUB_CODE>
+      <PUB_FLOOR pos_x='2822' pos_y='1105' b_code='B0008' >1F</PUB_FLOOR>
+    </PUB_INFO>
+    <PUB_INFO sect='' status='ALL' area='ESC_A' floor='1F,2F'>
+      <PUB_ID>PUB_2F_2</PUB_ID>
+      <PUB_CODE>P02</PUB_CODE>
+      <PUB_FLOOR pos_x='2831' pos_y='1506' b_code='B0008' >2F</PUB_FLOOR>
+    </PUB_INFO>
+    <PUB_INFO sect='' status='ALL' area='ELE_A' floor='1F,2F'>
+      <PUB_ID>PUB_2F_3</PUB_ID>
+      <PUB_CODE>P01</PUB_CODE>
+      <PUB_FLOOR pos_x='1729' pos_y='894' b_code='B0008' >2F</PUB_FLOOR>
+    </PUB_INFO>
+  </PUB_LIST>
+  <NODE_LIST>
+    <NODE_INFO floor='1F' b_code='B0008' x1='2809' y1='1095' x2='2735' y2='858' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='1F' b_code='B0008' x1='2735' y1='858' x2='2595' y2='1046' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='1F' b_code='B0008' x1='2595' y1='1046' x2='1965' y2='1037' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='1F' b_code='B0008' x1='1965' y1='1037' x2='1912' y2='1335' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='1F' b_code='B0008' x1='1897' y1='686' x2='1965' y2='1037' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='1F' b_code='B0008' x1='2132' y1='560' x2='1944' y2='576' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='1F' b_code='B0008' x1='1944' y1='576' x2='1897' y2='686' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='1F' b_code='B0008' x1='1577' y1='696' x2='1721' y2='680' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='1F' b_code='B0008' x1='1721' y1='680' x2='1897' y2='686' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='1F' b_code='B0008' x1='1721' y1='680' x2='1944' y2='576' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='1F' b_code='B0008' x1='2733' y1='863' x2='2674' y2='744' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='1F' b_code='B0008' x1='2674' y1='744' x2='2366' y2='736' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='1F' b_code='B0008' x1='2366' y1='736' x2='2132' y2='560' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='2F' b_code='B0008' x1='1738' y1='986' x2='2513' y2='944' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='2F' b_code='B0008' x1='2513' y1='944' x2='2794' y2='942' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='2F' b_code='B0008' x1='2794' y1='942' x2='2870' y2='1177' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='2F' b_code='B0008' x1='2870' y1='1177' x2='2760' y2='1296' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='2F' b_code='B0008' x1='2760' y1='1296' x2='2830' y2='1491' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='2F' b_code='B0008' x1='2760' y1='1296' x2='2493' y2='1286' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+    <NODE_INFO floor='2F' b_code='B0008' x1='2493' y1='1286' x2='1738' y2='986' direction='0' stime0='0000' etime0='2359' stime1='0000' etime1='2359' stime2='0000' etime2='2359' />
+  </NODE_LIST>
+  <SHAPE_LIST>
+  </SHAPE_LIST>
+  <PARK_LIST>
+  </PARK_LIST>
+</KIOSK>
